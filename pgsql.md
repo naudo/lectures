@@ -154,7 +154,5 @@ name your database
 ##Helpful commands
 
 
-
-
 ##More links
 http://www.lainoox.com/apt-get-packages/

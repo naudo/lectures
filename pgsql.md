@@ -13,7 +13,7 @@ version of pg. Don't worry, we'll be installing a newer version
 
 ## Who is this for?
 This document is aimed at folks with several weeks of experience who
-have mostly been using sqlite or other non pg database.
+have mostly been using sqlite or other non pg databases.
 
 
 ## Installation
@@ -98,17 +98,63 @@ Creating new cluster 9.2/main ...
 
 Congrats! You should now be ready to connect
 
-
-## Connecting
-
-Type `psql`
-
-
-
 To read more, checkout the postgres wiki
 https://wiki.postgresql.org/wiki/Apt
 
 
 
+## Connecting
+
+Type `psql`. Chances are if you just installed from apt, you'll get an
+error that looks similar to 
+
+````bash
+vagrant@precise32:~$ psql
+psql: FATAL:  role "vagrant" does not exist
+````
+
+Ugh,  a roadblock.  Worry not because this leads into our first
+postgres lesson about roles.
 
 
+
+### Roles
+
+WRITE ME PLOX
+
+
+### Connecting( for real this time!)
+So now that we've learned about roles, let's connect to the db
+
+````bash
+vagrant@prcise32:~$ sudo -u postgres psql postgres
+psql (9.2.4)
+Type "help" for help.
+
+postgres=# 
+````
+
+Yea, we now have database access and are inside of postgres!
+
+
+### Creating a DB
+
+So we've installed, setup, and connected to postgres. You may be
+surprised to learn that we don't actually have a DB yet and will have to
+create it. Fortunately postgres comes with a command to do just this.
+Run the following command, replacing mydb with what you would like to
+name your database
+
+```bash
+ sudo -u postgres createdb mydb
+````
+
+ 
+
+##Helpful commands
+
+
+
+
+##More links
+http://www.lainoox.com/apt-get-packages/

@@ -156,7 +156,18 @@ it's time to start hacking.
 ## Configuring SQL Alchemy & Flask
 
 ## Deploying
+Deal with taking an existing heroku app, and making the neccesarry changes
+to allow it to run on heroku. Don't need to worry about explaining how heroku
+works or to use it.
+//Check that the add on exists
+//if it doesn't add it
 
+Heroku exposes through env var `DATABASE_URL`. Let's connect to this.
+
+Great! it works, but what happens if we want to delete a table and test some 
+code? Or what if we want to create a user but not let them login to the production site yet?
+
+### Different evniornments
 
 ## Misc
 

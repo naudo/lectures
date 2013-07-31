@@ -9,8 +9,10 @@ version of pg. Don't worry, we'll be installing a newer version.
 
 
 ## Who is this for?
-This document is aimed at folks with several weeks of experience who
-have mostly been using sqlite or other non pg databases.
+This document is aimed at folks with several weeks of programming /database experience who
+have mostly been using sqlite or other non pg databases.  I'm going to assume that you know 
+how to (look up) the syntax for sql stuff such as creating a table and querying.  I will point 
+terminal commands that may be new.
 
 
 ## Installation

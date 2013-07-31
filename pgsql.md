@@ -144,15 +144,25 @@ So we've installed, setup, and connected to postgres. You may be
 surprised to learn that we don't actually have a DB yet and will have to
 create it. Fortunately postgres comes with a command to do just this.
 Run the following command, replacing mydb with what you would like to
-name your database
+name your database.
 
 ```bash
  sudo -u postgres createdb mydb
 ````
 
- 
+Awesome! Now that we're all setup with postgres and have created our database,
+it's time to start hacking.
 
-##Helpful commands
+## Configuring SQL Alchemy & Flask
+
+## Deploying
+
+
+## Misc
+
+###Helpful commands
+WRITE ME PLOX
+
 
 
 ##More links

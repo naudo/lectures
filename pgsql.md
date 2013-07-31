@@ -155,6 +155,9 @@ it's time to start hacking.
 
 ## Configuring SQL Alchemy & Flask
 
+add some stuff to requirements.txt `psycopg2==2.5`
+
+
 ## Deploying
 Deal with taking an existing heroku app, and making the neccesarry changes
 to allow it to run on heroku. Don't need to worry about explaining how heroku

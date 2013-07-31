@@ -35,8 +35,9 @@ Update the local package cache
 vagrant@precise32:~$ sudo apt-get update
 ````
 
-Check to see if there is a version of pg >= 9.2 yet. Don't worry if there
-isn't. We'll work around it.
+Check to see if there is a version of pg >= 9.2 yet. If there is, feel 
+free to skip ahead to installing with apt. If it doesn't exist, Don't 
+worry, we'll work around it. 
 
 ```bash
 vagrant@precise32:~$ sudo apt-cache search postgresql | grep postgresql-9.
@@ -78,6 +79,8 @@ Awesome! We've not got a package repo all setup and ready to go. Update
 your apt cache and let's do a search for postgres-9.2 `sudo apt-cache
 search postgresql-9.2`  We should now see ~10 pg 9.2 packages and can
 now install postgresql like a normal package.
+
+### Installing from apt
 
 After running you should see some info printed out. This tells you a
 little bit about your brand new pg data (like what port it will listen

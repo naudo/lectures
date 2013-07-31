@@ -1,11 +1,8 @@
 ## What is this?
 
-The idea of this doc is to provied some instructions on how to setup and
+The idea of this doc is to provide some instructions on how to setup and
 run pg sql.  Additionally, I'm going to leave some additional notes on
-things that are worth nothing (ie commands, ways of thinking).
-Additionally I would like to include somethings to think about when
-deploying (heroku).
-
+concepts / features that are important to understand Postgres.  Deployment will be covered.
 
 Linux users, at the time of writing this, ubuntu ships with an older
 version of pg. Don't worry, we'll be installing a newer version

@@ -18,11 +18,10 @@ terminal commands that may be new.
 ## Installation
 
 ### Mac
-There are a couple of options for this (homebrew), but while I love to
-let homebrew manage all of my apps,
-Postgres.app[http://postgresapp.com/] is by far the best way to run pg
-on OSX.  Just download it and install it
-
+I generally advocate just installing programs through homebrew (http://brew.sh/) but there
+is an amazing mac app that is already built.  Just download Postgres.app (http://postgresapp.com/)
+and drag / drop it to your Applications folder.  Starting Postgres.app will put an elephant icon in
+your system tray.
 
 ### Linux
 For this I'm going to assume that you are running Ubuntu or something

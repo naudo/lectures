@@ -1,29 +1,27 @@
 ## What is this?
 
-The idea of this doc is to provied some instructions on how to setup and
-run pg sql.  Additionally, I'm going to leave some additional notes on
-things that are worth nothing (ie commands, ways of thinking).
-Additionally I would like to include somethings to think about when
-deploying (heroku).
-
+The idea of this doc is to provide some instructions on how to setup and
+run Postgres.  Additionally, I'm going to leave some additional notes on
+concepts / features that are important to understand Postgres.  Deployment will be covered.
 
 Linux users, at the time of writing this, ubuntu ships with an older
-version of pg. Don't worry, we'll be installing a newer version
+version of pg. Don't worry, we'll be installing a newer version.
 
 
 ## Who is this for?
-This document is aimed at folks with several weeks of experience who
-have mostly been using sqlite or other non pg databases.
+This document is aimed at folks with several weeks of programming /database experience who
+have mostly been using sqlite or other non pg databases.  I'm going to assume that you know 
+how to (look up) the syntax for sql stuff such as creating a table and querying.  I will point 
+terminal commands that may be new.
 
 
 ## Installation
 
 ### Mac
-There are a couple of options for this (homebrew), but while I love to
-let homebrew manage all of my apps,
-Postgres.app[http://postgresapp.com/] is by far the best way to run pg
-on OSX.  Just download it and install it
-
+I generally advocate just installing programs through homebrew (http://brew.sh/) but there
+is an amazing mac app that is already built.  Just download Postgres.app (http://postgresapp.com/)
+and drag / drop it to your Applications folder.  Starting Postgres.app will put an elephant icon in
+your system tray.
 
 ### Linux
 For this I'm going to assume that you are running Ubuntu or something
@@ -37,8 +35,9 @@ Update the local package cache
 vagrant@precise32:~$ sudo apt-get update
 ````
 
-Check to see if there is a version of pg >= 9.2 yet. Don't worry if there
-isn't. We'll work around it.
+Check to see if there is a version of pg >= 9.2 yet. If there is, feel 
+free to skip ahead to installing with apt. If it doesn't exist, Don't 
+worry, we'll work around it. 
 
 ```bash
 vagrant@precise32:~$ sudo apt-cache search postgresql | grep postgresql-9.
@@ -80,6 +79,8 @@ Awesome! We've not got a package repo all setup and ready to go. Update
 your apt cache and let's do a search for postgres-9.2 `sudo apt-cache
 search postgresql-9.2`  We should now see ~10 pg 9.2 packages and can
 now install postgresql like a normal package.
+
+### Installing from apt
 
 After running you should see some info printed out. This tells you a
 little bit about your brand new pg data (like what port it will listen
@@ -143,15 +144,39 @@ So we've installed, setup, and connected to postgres. You may be
 surprised to learn that we don't actually have a DB yet and will have to
 create it. Fortunately postgres comes with a command to do just this.
 Run the following command, replacing mydb with what you would like to
-name your database
+name your database.
 
 ```bash
  sudo -u postgres createdb mydb
 ````
 
- 
+Awesome! Now that we're all setup with postgres and have created our database,
+it's time to start hacking.
 
-##Helpful commands
+## Configuring SQL Alchemy & Flask
+
+add some stuff to requirements.txt `psycopg2==2.5`
+
+
+## Deploying
+Deal with taking an existing heroku app, and making the neccesarry changes
+to allow it to run on heroku. Don't need to worry about explaining how heroku
+works or to use it.
+//Check that the add on exists
+//if it doesn't add it
+
+Heroku exposes through env var `DATABASE_URL`. Let's connect to this.
+
+Great! it works, but what happens if we want to delete a table and test some 
+code? Or what if we want to create a user but not let them login to the production site yet?
+
+### Different evniornments
+
+## Misc
+
+###Helpful commands
+WRITE ME PLOX
+
 
 
 ##More links

@@ -1,3 +1,5 @@
+#Sublime Text notes
+
 If you want to open all of the files in a directory (project) but don't
 want to modify your alias when you add a new file, you can change your
 subl call to just "subl ." (no quotes). The dot after subl tells it to
@@ -7,11 +9,11 @@ just load everything. Your command would then become:
 alias pjt="cd ~/path your project/ &&  subl . &  || echo 'uh oh!!' "
 ````
 Now after you do this there are a few hotkeys that you may not know
-about. Cmd -T on mac ctrl-T on linux(?). This is the Sublime fuzzy find.
+about. `Cmd-T` on mac `Ctrl-T` on linux(?). This is the Sublime fuzzy find.
 Play around for a bit and notice how sublime doesn't care if words are
 right next to each other. This is great for when you have a lot of
-similarly named files. Additionally you probably know to use Cmd +F to
-search a file (Ctrl-F on ), but did you know that if you Cmd + Shift + F
+similarly named files. Additionally you probably know to use `Cmd +F` to
+search a file (`Ctrl-F` on linux), but did you know that if you `Cmd + Shift + F`
 that it will do a project wide search (default, you can play around with
 filters and such for regex / case sensitive, etc).
 

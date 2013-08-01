@@ -3,8 +3,9 @@ want to modify your alias when you add a new file, you can change your
 subl call to just "subl ." (no quotes). The dot after subl tells it to
 just load everything. Your command would then become:
 
+````bash
 alias pjt="cd ~/path your project/ &&  subl . &  || echo 'uh oh!!' "
-
+````
 Now after you do this there are a few hotkeys that you may not know
 about. Cmd -T on mac ctrl-T on linux(?). This is the Sublime fuzzy find.
 Play around for a bit and notice how sublime doesn't care if words are

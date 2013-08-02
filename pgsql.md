@@ -56,9 +56,9 @@ right. The thing that tells your computer where to download an install
 files from is defined in several different files.  Default ubuntu packages go into `/etc/apt/sources.list` which is great, except for one thing,
 the packages we want don't exist in the main ubuntu repos yet.
 Foruntately we can add more. Create a new file in
-`/et/apt/source.list.d/` named pgdg.list. This is where we will be
-adding the repo for postgres from the postgres servers. Once the files
-have been created, open it in vim and let's add the repo to the source
+`/et/apt/source.list.d/` named `pgdg.list`. This is where we will be
+adding the repo for postgres from the postgres project's servers. Once the file
+has been created, open it in vim and let's add the repo to the source
 file.
 ````
 deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
@@ -75,10 +75,10 @@ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc |
 sudo apt-key add -
 ```` 
 
-Awesome! We've not got a package repo all setup and ready to go. Update
+Awesome! We've got the package repo all setup and ready to go. Update
 your apt cache and let's do a search for postgres-9.2 `sudo apt-cache
 search postgresql-9.2`  We should now see ~10 pg 9.2 packages and can
-now install postgresql like a normal package.
+now install postgresql via apt.
 
 ### Installing from apt
 

@@ -135,7 +135,8 @@ Type "help" for help.
 postgres=# 
 ````
 
-Yea, we now have database access and are inside of postgres!
+Yea, we now have database access and are inside of postgres! Feel free to write
+some queries to play around with it
 
 
 ### Creating a DB

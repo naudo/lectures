@@ -56,7 +56,7 @@ right. The thing that tells your computer where to download an install
 files from is defined in several different files.  Default ubuntu packages go into `/etc/apt/sources.list` which is great, except for one thing,
 the packages we want don't exist in the main ubuntu repos yet.
 Foruntately we can add more. Create a new file in
-`/et/apt/source.list.d/` named `pgdg.list`. This is where we will be
+`/etc/apt/source.list.d/` named `pgdg.list`. This is where we will be
 adding the repo for postgres from the postgres project's servers. Once the file
 has been created, open it in vim and let's add the repo to the source
 file.

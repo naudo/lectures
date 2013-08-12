@@ -71,8 +71,7 @@ let's go ahead and download the repo key for postgres.  Run the
 following command from the command line to download and add the key.
 
 ````
-wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc |
-sudo apt-key add -
+wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 ```` 
 
 Awesome! We've got the package repo all setup and ready to go. Update
